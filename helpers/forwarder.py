@@ -39,4 +39,4 @@ async def ForwardMessage(client: Client, msg: Message):
             except Exception as err:
                 await client.send_message(chat_id="me", text=f"#ERROR: `{err}`\n\nUnable to Forward Message to `{str(Config.FORWARD_TO_CHAT_ID[i])}`")
     except Exception as err:
-        await client.send_message(chat_id="me", text=f"#ERROR: `{err}`")
+        pass
